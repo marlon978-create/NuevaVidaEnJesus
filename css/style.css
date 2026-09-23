@@ -1,0 +1,479 @@
+/* Reset + easier sizing */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    background-image:url("../images/cross2.png");
+    background-size: 110% auto;
+    background-position: center 0%;
+    background-repeat:no-repeat;
+    background-color: #111;
+    font-family:'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Main content container */
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+
+    background-color:lightgrey;
+    padding:50px;
+    border-radius:50px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+    width:90%;
+    max-width:700px;
+    min-height:250px;
+
+    margin:auto;
+}
+
+h1,
+h2{
+    text-align:center;
+    color:white;
+}
+
+.title{
+    margin-top:100px;
+    text-align:center;
+    padding:80px;
+}
+
+.title h2{
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.title h1{
+    font-size: 52px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px black;
+}
+.hero{
+    min-height: 720px;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
+    url("../images/cross2.pgn");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.hero h1{
+    position: relative;
+}
+.hero h1::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #d4af37;
+    margin: 12px auto 0;
+}
+.service-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
+    width: 520px;
+    max-width: 90%;
+    margin: 20px auto 0;
+}
+.service-item{
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 25px;
+    color: white;
+}
+.service-item:first-child{
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+.service-item .icon{
+    font-size: 24px;
+}
+.service-item p{
+    margin: 4px 0 0;
+}
+.service-item a{
+    color: white;
+    text-decoration: none;
+}
+.service-item a:hover{
+    color: #d4af37
+}
+/* Navigation */
+
+nav{
+    width:100%;
+    height: 70px;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 25px;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+.church-logo{
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.church-logo span:first-child{
+    color: #d4af37;
+    font-size: 28px;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+nav a:hover {
+    color: #d4af37
+
+}
+nav button{
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+/* Bottom section */
+
+.bottom{
+    width:90%;
+    max-width:600px;
+    margin:35px auto;
+    padding: 20px 30px;
+    text-align:center;
+    color:white;
+    background: rgba(0,0,0,.55);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.bottom h3{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.bottom p{
+    font-size: 17px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.bottom a{
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.welcome-section{
+    background: linear-gradient(
+        to bottom, #f3dfc3, #fffaf3
+    );
+    padding: 90px, 20px;
+    text-align: center;
+}
+.welcome-section{
+    position: relative;
+}
+.welcome-section::before{
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(
+        to bottom, transparent, #f3dfc3
+    );
+}
+.welcome-content{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.welcome-content h2{
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #8b6f2f;
+}
+.welcome-content h3{
+    font-size: 36px;
+    margin: 0 0 20px;
+    color: #222;
+}
+.welcome-content p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+.welcome-button{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.welcome-button:hover{
+    background-color: #8b6f2f;
+}
+.events-preview{
+    background-color: #1f1f1f;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.events-preview-content{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.section-label{
+    color: #d4af37;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.events-preview h2{
+    font-size: 38px;
+    margin: 10px 0;
+}
+.event-cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+.event-card{
+    background-color: white;
+    color: #222;
+    width: 280px;
+    min-height: 180px;
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.event-card h3{
+    margin-top: 0;
+}
+.events-button{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #d4af37;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3;
+}
+.events-button:hover{
+    background-color: white;
+}
+.site-footer{
+    background-color: #111;
+    color: white;
+    padding: 50px 20px 20px;
+}
+.footer-content{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer-section{
+    flex:1
+}
+.footer-section h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+.footer-section p{
+    margin: 6px 0;
+    line-height: 1.5;
+}
+.footer-section a{
+    display:block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+.footer-section a:hover{
+    text-decoration: underline;
+}
+.footer-bottom{
+    max-width: 1100px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+    font-size: 14px;
+}
+/* Groups page */
+
+.groups-container{
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+
+    margin-top:60px;
+    padding-top:40px;
+    flex-wrap:wrap;
+}
+
+.groups-page{
+    width:85%;
+    max-width:1100px;
+
+    margin:120px auto;
+
+    padding:30px;
+
+    background:rgba(0,0,0,.6);
+    border-radius:15px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.group-card h3{
+    text-decoration:underline;
+    font-weight:bold;
+    color:white;
+}
+
+.group-card p{
+    color:white;
+    font-weight:bold;
+}
+
+/* About page */
+
+.about-content{
+    max-width:1100px;
+    margin:120px auto 40px;
+
+    padding:30px;
+
+    background:rgba(0,0,0,.55);
+    color:white;
+
+    border-radius:15px;
+    line-height:1.6;
+}
+
+.history ul,
+.Creemos ul{
+    padding-left:25px;
+}
+
+.history li,
+.Creemos li{
+    margin-bottom:12px;
+}
+
+/* Connect page */
+
+.connect-content{
+    width:85%;
+    max-width:1100px;
+
+    margin:120px auto 40px;
+    padding:30px;
+
+    background:rgba(0,0,0,.55);
+    color:white;
+
+    border-radius:15px;
+    line-height:1.6;
+
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.directors,
+.ancianos,
+.diaconos{
+    width:30%;
+    min-width:250px;
+    text-align:center;
+}
+
+/* =================== */
+/* Responsive settings */
+/* =================== */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:12px;
+        text-align:center;
+    }
+
+    nav a{
+        margin-right:0;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .title{
+        margin-top:50px;
+    }
+
+    .groups-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .connect-content{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .directors,
+    .ancianos,
+    .diaconos{
+        width:100%;
+        margin-bottom:30px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    .bottom{
+        width:95%;
+    }
+}
