@@ -372,30 +372,171 @@ nav button{
 }
 
 /* About page */
-
-.about-content{
-    max-width:1100px;
-    margin:120px auto 40px;
-
-    padding:30px;
-
-    background:rgba(0,0,0,.55);
+.about-header{
+    margin-top: 0px;
+    margin-left: 40px;
+}
+.about-label{
+    display: flex;
+    align-items: center;
+    gap:14px;
+    color: #d9a62e;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.yellow-line{
+    display: inline-block;
+    width: 35px;
+    height: 3px;
+    background-color: #d9a62e;
+    flex-shrink: 0;
+}
+.about-title{
+    font-size: 64px;
+    color: white;
+    margin: 10px 0 0 0;
+    line-height: 1;
+    text-align: left;
+}
+.title-line{
+    width: 35px;
+    height: 3px;
+    background-color: #d9a62e;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-subtitle{
+    font-size: 15px;
     color:white;
-
-    border-radius:15px;
-    line-height:1.6;
+    margin: 10px 0 0 0;
+    line-height: 0;
+    text-align: left;
 }
-
-.history ul,
-.Creemos ul{
-    padding-left:25px;
+.history{
+    width: 85;
+    max-width:1200px;
+    margin: 30px auto 70px auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: rgba(10, 15, 18, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    color: white;
+    box-sizing: border-box;
 }
-
-.history li,
-.Creemos li{
-    margin-bottom:12px;
+.history-text{
+    flex: 2;
 }
-
+.history-text ul{
+    padding-left: 22px;
+    margin: 0;
+}
+.history-text li{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.history-text li::marker{
+    color:#d9a62e;
+    font-size: 1.2em;
+}
+.history-image{
+    width: 32%;
+    flex-shrink: 0;
+}
+.history-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.image-placeholder{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px dashed #d9a62e;
+    border-radius: 10px;
+    color: #d9a62e;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.nuestra-fe::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #d9a62e;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.nuestra-fe{
+    color:#d9a62e;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.creemos h2{
+    font-size: 48px;
+    text-align: center;
+}
+.fundamentos{
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.belief-line{
+    width: 55px;
+    height: 2px;
+    background-color: #d9a62e;
+    margin: 12px auto 30px;
+}
+.creemos ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 25px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto 0;
+    padding: 0;
+}
+.creemos li{
+    list-style: none;
+    background: rgba(15. 20, 24, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 20px 25px;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.belief-icon{
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    border: 1px solid #d6a84b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.belief-box li{
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+}
 /* Connect page */
 
 .connect-content{
@@ -423,38 +564,129 @@ nav button{
     min-width:250px;
     text-align:center;
 }
+.services-content{
+    padding: 120px 8% 80px;
+    min-height: 100vh;
+    color: white;
+}
+.services-header{
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 70px;
+}
+.services-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #d6a84b;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.services-label .yellow-line{
+    width: 45px;
+    height: 2px;
+    background: #d6a84b;
+}
+.services-title{
+    font-size: 60px;
+    margin: 20px 0 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+.services-subtitle{
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #c7c7c7;
+}
+.services-header .title-line{
+    width: 90px;
+    height: 2px;
+    background: #d6a84b;
+    margin: 25px auto 0;
+}
+.events-content{
+    padding: 120px 8% 80px;
+    min-height: 100vh;
+    color: white;
+}
+.events-header{
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 70px;
+}
+.events-label{
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color:#d6a84b
+}
+.events-label .yellow-line{
+    width: 45px;
+    height: 2px;
+    background: #d6a84b;
+}
+.events-title{
+    font-size: 60px;
+    margin: 20px 0 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+.events-subtitle{
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #c7c7c7;
+}
+.events-header .title-line{
+    width: 90px;
+    height: 2px;
+    background: #d6a84b;
+    margin: 25px auto 0;
+}
+
 
 /* =================== */
 /* Responsive settings */
 /* =================== */
 
 @media (max-width:768px){
-
+    body{
+        background-size: 180% auto;
+        background-position: 65% 0%;
+    }
     nav{
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        gap: 8px;
-        padding: 15px 20px;
+        justify-content: center;
+        gap: 12px;
+        padding: 15px 10px;
     }
-
+    .church-logo{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
     nav a{
-        margin-right:0;
+        margin-right: 0;
+        font-size: 13px;
+    }
+    #languageButton{
         font-size: 12px;
+        padding: 6px 10px;
     }
-
     h1{
-        font-size:30px;
+        font-size: 30px;
+        line-height: 1.1;
     }
-
     h2{
-        font-size:22px;
+        font-size: 18px;
     }
-
     .title{
-        margin-top:50px;
+        margin-top: 20px;
     }
-
     .groups-container{
         flex-direction:column;
         align-items:center;
