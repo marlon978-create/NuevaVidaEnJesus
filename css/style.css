@@ -655,8 +655,72 @@ nav button{
 .menu-toggle{
     display: none;
 }
-
-
+.services-grid{
+    width: 90%;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.service-card{
+    background: rgba(10, 10, 10, 0.88);
+    border: 1px solid #d6a84b;
+    border-radius: 12px;
+    padding: 35px 30px;
+    text-align: center;
+    min-height: 330px;
+    box-sizing: border-box;
+    min-width: 0;
+}
+.service-card h2{
+    font-size: 28px;
+    margin-bottom: 18px;
+    color: white;
+}
+.service-card > p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d0d0d0;
+    margin-bottom: 30px;
+}
+.service-icon{
+    font-size: 48px;
+    color: #d6a84b;
+    margin-bottom: 20px;
+}
+.service-info{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(214, 168, 75, 0.35);
+}
+.service-schedule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.calendar-icon{
+    font-size: 26px;
+}
+.schedule-text{
+    text-align: left;
+}
+.schedule-text p{
+    margin: 3px 0;
+}
+.service-info p:first-child{
+    color:#d6a84b;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.service-info p:last-child{
+    color: white;
+    font-size: 18px;
+    margin-top: 8px;
+}
 /* =================== */
 /* Responsive settings */
 /* =================== */
@@ -739,8 +803,11 @@ nav button{
         gap: 22px;
     }
     .history-image{
+        display: block;
         width: 100%;
         max-width: 100%;
+        margin: 0 0 25px 0;
+
     }
     .history-image img{
         width: 100%;
@@ -783,6 +850,57 @@ nav button{
         height: 40px;
         min-width: 40px;
         font-size: 18px;
+    }
+    /*SERVICES MOBILE*/
+    .services-content{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .services-header{
+        padding: 120px 20px 30px;
+        text-align: center;
+    }
+    .services-title{
+        font-size: 38px;
+        line-height: 1.1;
+    }
+    .services-subtitle{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .services-grid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+    .service-card{
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 30px 20px;
+    }
+    .service-icon{
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+    .service-card h2{
+        font-size: 25px;
+    }
+    .service-card > p{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .service-info{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .service-schedule{
+        justify-content: flex-start;
+    }
+    .calendar-icon{
+        font-size: 24px;
     }
 
 }
